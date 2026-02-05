@@ -1,0 +1,65 @@
+/* Global Variables */
+:root {
+  --color-bg: hsl(210, 20%, 8%);
+  /* Dark Charcoal */
+  --color-bg-light: hsl(210, 18%, 14%);
+  --color-primary: hsl(210, 80%, 55%);
+  /* Steel Blue */
+  --color-accent: hsl(35, 100%, 55%);
+  /* Amber */
+  --color-text: hsl(210, 20%, 96%);
+  --color-text-muted: hsl(210, 15%, 65%);
+  --font-main: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  --border-radius: 8px;
+  --shadow-glow: 0 0 15px rgba(64, 150, 230, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-bg-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
