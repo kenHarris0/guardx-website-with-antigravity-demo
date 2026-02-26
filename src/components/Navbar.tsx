@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import logo from '/logo.png';
 import '../styles/index.css';
