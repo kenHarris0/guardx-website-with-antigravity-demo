@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { FaShieldAlt, FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import logo from '/logo.png';
 import '../styles/index.css';
 
 const Navbar = () => {
@@ -41,7 +41,7 @@ const Navbar = () => {
             }}
         >
             <div className="flex items-center gap-2" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <FaShieldAlt style={{ color: 'var(--color-primary)', fontSize: '1.8rem' }} />
+                <img src={logo} alt="GuardX Logo" style={{ height: '2.5rem', width: 'auto' }} />
                 <span style={{ fontSize: '1.5rem', fontWeight: '800', letterSpacing: '1px' }}>
                     GUARD<span style={{ color: 'var(--color-primary)' }}>X</span>
                 </span>
